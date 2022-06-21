@@ -95,9 +95,8 @@ const deleteRegister = async (req, res) => {
         }
 
         /* await user.destroy() No se recomienda esta opcion*/
-        await register.update({ 
-            entranceTime: null, 
-            exitTime: null, 
+        await register.update({
+            entranceTime: null,
             status: 'cancelled' 
         })
 
